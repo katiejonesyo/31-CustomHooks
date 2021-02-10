@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useById } from '../hooks/character';
-import Loading from '../loading/Loading';
-import CharacterDetails from '../components/character/CharacterDetails';
+import { useById } from '../Character';
+import Loading from '../../components/loading/Loading';
+import CharacterDetails from '../../components/characters/CharacterDetails';
 
 const Character = ({ match }) => {
   const { loading, character } = useById(match.params.id);

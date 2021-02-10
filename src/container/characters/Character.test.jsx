@@ -3,7 +3,7 @@ import { render, screen, waitFor, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import CharacterApi from '../fixtures/Character.json';
+import CharacterApi from '../../components/fixtures/Character.json';
 import Character from './Character';
 
 const server = setupServer(

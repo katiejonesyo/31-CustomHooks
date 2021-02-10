@@ -3,7 +3,7 @@ import { BrowserRouter as Router,
   Route,
   Switch } from 'react-router-dom';
 import AllCharacters from '../../container/characters/AllCharacters';
-import Character from '../../container/characters/Characterd';
+import Character from '../../container/characters/Character';
 import Header from '../header/Header';
 
 export default function App() {
