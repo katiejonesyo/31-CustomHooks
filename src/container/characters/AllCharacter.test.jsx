@@ -25,12 +25,6 @@ describe('Containor All Characters', () => {
       expect(ul).not.toBeEmptyDOMElement();
     });
   });
-  it('creates a snapshot test of the character containor', () => {
-    const { asFragment } = render(<MemoryRouter>
-      <AllCharacters />
-    </MemoryRouter>);
-    expect(asFragment()).toMatchSnapshot();
-  });
 });
 
 
