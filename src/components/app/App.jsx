@@ -1,5 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router,
+  Route,
+  Switch } from 'react-router-dom';
+import AllCharacters from '../../container/characters/AllCharacters';
+import Character from '../../container/characters/Character';
+import Header from '../header/Header';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Router>
+      <Header/>
+      <Switch>
+        {/* <Route exact path="/" component={Header} /> */}
+        <Route exact path="/characters" component={AllCharacters} />
+        <Route exact path="/characters/:id" component={Character}/>
+      </Switch>
+    </Router>
+  );
 }
+
+
