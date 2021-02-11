@@ -6,6 +6,7 @@ import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import AllCharacters from './AllCharacters';
 import charactersApi from '../../components/fixtures/Characters.json';
+import { NewTheme } from '../../components/hooks/Theme';
 
 const server = setupServer(
   rest.get('https://hey-arnold-api.herokuapp.com/api/v1/characters', (req, res, ctx) => {
@@ -18,9 +19,11 @@ describe('Contain all characters', () => {
   afterEach(() => cleanup());
   it('displays a loading screen and characters', async() => {
     render(
-    <MemoryRouter>
-      <AllCharacters />
-    </MemoryRouter>
+    <NewTheme>
+      <MemoryRouter>
+        <AllCharacters />
+      </MemoryRouter>
+    </NewTheme>
     );
 
     screen.getAllByText('Loading...');

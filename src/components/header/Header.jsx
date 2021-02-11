@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../hooks/Theme';
-import './Header.css';
+import styles from './Header.css';
+
 
 export default function Header() {
   const { theme, setTheme } = useTheme();

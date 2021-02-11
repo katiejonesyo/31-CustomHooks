@@ -13,7 +13,6 @@ export default function App() {
       <NewTheme>
       <Header/>
       <Switch>
-        {/* <Route exact path="/" component={Header} /> */}
         <Route exact path="/characters" component={AllCharacters} />
         <Route exact path="/characters/:id" component={Character}/>
       </Switch>

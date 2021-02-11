@@ -3,7 +3,7 @@
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
   <div
-    class="header"
+    class="dark"
   >
     <h1>
       Arnold Api
@@ -19,6 +19,9 @@ exports[`Header component renders Header 1`] = `
     >
       Home
     </a>
+    <input
+      type="checkbox"
+    />
   </div>
 </DocumentFragment>
 `;
