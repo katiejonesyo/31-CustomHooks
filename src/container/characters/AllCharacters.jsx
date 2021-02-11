@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import CharacterList from '../../components/characters/CharacterList';
 import { useCharacters } from '../../components/hooks/Character';
 import Loading from '../../components/loading/Loading';
