@@ -12,12 +12,17 @@ const server = setupServer(
     return res(ctx.json(charactersApi));
   })
 );
-describe('Containor All Characters', () => {
+describe('Contain all characters', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
   afterEach(() => cleanup());
-  it('displays a loding screen and characters', async() => {
-    render(<MemoryRouter><AllCharacters /></MemoryRouter>);
+  it('displays a loading screen and characters', async() => {
+    render(
+    <MemoryRouter>
+      <AllCharacters />
+    </MemoryRouter>
+    );
+
     screen.getAllByText('Loading...');
     const ul = await screen.findByTestId('characters');
 

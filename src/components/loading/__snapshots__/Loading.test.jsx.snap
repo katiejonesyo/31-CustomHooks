@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component renders Loading 1`] = `
+<DocumentFragment>
+  Loading...
+  <iframe
+    allowfullscreen=""
+    class="giphy-embed"
+    frameborder="0"
+    height="360"
+    src="https://giphy.com/embed/3ohjUYGyW0M0Q5GFoc"
+    width="480"
+  />
+  <p>
+    <a
+      href="https://giphy.com/gifs/heyarnold-nickelodeon-hey-arnold-3ohjUYGyW0M0Q5GFoc"
+    >
+      via GIPHY
+    </a>
+  </p>
+</DocumentFragment>
+`;

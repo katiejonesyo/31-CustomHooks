@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useById } from '../Character';
+import { useById } from '../../components/hooks/Character';
 import Loading from '../../components/loading/Loading';
 import CharacterDetails from '../../components/characters/CharacterDetails';
 

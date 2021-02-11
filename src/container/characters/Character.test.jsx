@@ -34,7 +34,11 @@ describe('Character Page', () => {
       <Character 
         match={{ params: { id: '5da237699734fdcb7bef8f63' } }}/>
     </MemoryRouter>);
-    expect(asFragment()).toMatchSnapshot();
+
+
+    return waitFor(() => {
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 });
 

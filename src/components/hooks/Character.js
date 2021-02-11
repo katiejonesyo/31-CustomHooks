@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { allCharacters, characterById } from '../services/arnoldApi';
+import { allCharacters, characterById } from '../../services/arnoldApi';
 
 
 export const useCharacters = () => {
