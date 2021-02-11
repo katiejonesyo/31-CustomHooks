@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+  >
+    <h1>
+      Arnold Api
+    </h1>
+    <a
+      href="/characters"
+    >
+      List of all the characters
+    </a>
+    <br />
+    <a
+      href="/"
+    >
+      Home
+    </a>
+  </div>
+</DocumentFragment>
+`;
